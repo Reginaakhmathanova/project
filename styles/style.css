@@ -1,1 +1,25 @@
+@import url('fonts.css');
+@import url('colors.css');
+@import url('buttons.css');
 
+body{
+    font-family: "Roboto", sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
