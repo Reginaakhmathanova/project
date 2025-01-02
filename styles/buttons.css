@@ -1,0 +1,16 @@
+.btn{
+    padding: 15px 20px;
+    background-color: #0b7077;
+    color: #ffffff;
+    font-weight: 200;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-right{
+    align-self: end;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
