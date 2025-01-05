@@ -5,36 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <title>Учиться PRO100</title>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
         <div class="logo">
-            Учиться PRO100
+            <a href="/">Учиться PRO100</a>
         </div>
         <nav class="header__nav">
             <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">ЕГЭ/ОГЭ</a></li>
-                <li><a href="">Другие направления</a></li>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Отзывы</a></li>
-                <li><a href="">Контакты</a></li>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/">ЕГЭ/ОГЭ</a></li>
+                <li><a href="/">Другие направления</a></li>
+                <li><a href="/">О нас</a></li>
+                <li><a href="/">Отзывы</a></li>
+                <li><a href="/">Контакты</a></li>
             </ul>
         </nav>
-        <div>
-            <button class="btn">Вход</button>
-            <button class="btn">Регистрация</button>
+        <div class="login-block">
+            <button class="btn show-form-btn">Вход</button>
+            <button class="btn show-form-btn">Регистрация</button>
+            <span class="menu-btn"></span>
         </div>
     </header>
     <main>
         <section class="info-big">
             <article>
-                <h1>Прокачаем твои знания</h1>
+                <h1 class="info-big__title">Прокачаем твои знания</h1>
                 <span>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque dolores ea excepturi, exercitationem incidunt ipsum, iure magnam maiores minus obcaecati, praesentium quis suscipit tempora tenetur. Debitis eaque expedita ipsam? Animi, atque, dolor dolore dolores eaque explicabo hic illum nemo quia reprehenderit sint sunt vel.
                 </span>
@@ -53,7 +54,7 @@
                         <button class="btn btn-right">Подробнее</button>
                     </div>
                 </article>
-                <article class="info-double-ege">
+                <article class="info-double__ege">
                     <img src="images/fo_ege.webp" alt="ЕГЭ">
                     <div class="info-double__inner">
                         <span>ЕГЭ</span>
@@ -85,76 +86,89 @@
                 <h2>Отзывы</h2>
             </div>
             <div class="reviews__inner">
-                <article class="reviews__inner-items">
+				<article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Отзыв 1</span>
+                    <span>Jack</span>
                 </article>
                 <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Отзыв 2</span>
+                    <span>Nick</span>
                 </article>
                 <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Отзыв 3</span>
+                    <span>Michel</span>
                 </article>
                 <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Отзыв 4</span>
+                    <span>Jasy</span>
                 </article>
             </div>
         </section>
-        <section>
-            <div>
-                <article>
+        <section class="teachers">
+            <div class="title">
+                <h2>Наши специалисты</h2>
+            </div>
+            <div class="teachers__inner">
+                <article class="teachers__inner-item">
                     <img src="images/teacher_one.webp" alt="Учитель">
-                    <div>
-                        <span>Учитель 1</span>
+                    <div class="teachers__inner-text">
+                        <span>Маша</span>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto at beatae consectetur doloremque error esse explicabo facilis id labore nesciunt nihil nostrum, perspiciatis quasi, sapiente soluta veritatis voluptatem. Sequi.
+                        <button class="btn btn-right">Подробнее</button>
                     </div>
                 </article>
-                <article>
+                <article class="teachers__inner-item">
                     <img src="images/teacher_two.webp" alt="Учитель">
-                    <div>
-                        <span>Учитель 1</span>
+                    <div class="teachers__inner-text">
+                        <span>Валерия</span>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto at beatae consectetur doloremque error esse explicabo facilis id labore nesciunt nihil nostrum, perspiciatis quasi, sapiente soluta veritatis voluptatem. Sequi.
+                        <button class="btn btn-right">Подробнее</button>
                     </div>
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <div class="logo">Logo</div>
-        <nav class="bottom-nav">
-            <ul>
-                <li><a href="">Главная</a></li>
-                <li><a href="">ЕГЭ/ОГЭ</a></li>
-                <li><a href="">Другие направления</a></li>
-                <li><a href="">О нас</a></li>
-                <li><a href="">Отзывы</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="copyright">
-            copyright
-        </div>
+        <section class="footer">
+            <div class="logo">Logo</div>
+            <nav class="bottom-nav">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/">ЕГЭ/ОГЭ</a></li>
+                    <li><a href="/">Другие направления</a></li>
+                    <li><a href="/">О нас</a></li>
+                    <li><a href="/">Отзывы</a></li>
+                    <li><a href="/">Контакты</a></li>
+                </ul>
+            </nav>
+			<div class="contacts">
+				<span>+7 927 000 00 00</span>
+				<span>admin@site.com</span>
+			</div>
+            <div class="copyright">
+                By Ахматханова Р. В. & Иванова Д. В.
+            </div>
+        </section>
     </footer>
 </div>
-<form class="email-submit" action="" method="post">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" required>
+<form class="login visually-hidden" action="login.php" method="post">
+    <span class="login-form__close"></span>
+    <label for="name">Логин:</label>
+    <input type="text" id="name" name="login" required>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
 
     <button class="btn" type="submit">Отправить</button>
 </form>
+<script src="js/script.js"></script>
 </body>
 </html>
