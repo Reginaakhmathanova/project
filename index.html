@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Учиться PRO100</title>
 </head>
 <body>
@@ -17,13 +17,13 @@
             <a href="/">Учиться PRO100</a>
         </div>
         <nav class="header__nav">
-            <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/">ЕГЭ/ОГЭ</a></li>
-                <li><a href="/">Другие направления</a></li>
-                <li><a href="/">О нас</a></li>
-                <li><a href="/">Отзывы</a></li>
-                <li><a href="/">Контакты</a></li>
+            <ul class="header__nav-inner">
+                <li class="header__nav-item"><a href="/">Главная</a></li>
+                <li class="header__nav-item"><a href="/">ЕГЭ/ОГЭ</a></li>
+                <li class="header__nav-item"><a href="/">Другие направления</a></li>
+                <li class="header__nav-item"><a href="/">О нас</a></li>
+                <li class="header__nav-item"><a href="/">Отзывы</a></li>
+                <li class="header__nav-item"><a href="/">Контакты</a></li>
             </ul>
         </nav>
         <div class="login-block">
@@ -32,7 +32,7 @@
             <span class="menu-btn"></span>
         </div>
     </header>
-    <main>
+    <main class="main">
         <section class="info-big">
             <article>
                 <h1 class="info-big__title">Прокачаем твои знания</h1>
@@ -42,9 +42,7 @@
             </article>
         </section>
         <section>
-            <div class="title">
-                <h2>Готовьтесь к экзаменам легко и PRO100</h2>
-            </div>
+            <h2 class="title">Готовьтесь к экзаменам легко и PRO100</h2>
             <div class="info-double">
                 <article class="info-double__oge">
                     <img src="images/fo_oge.webp" alt="ОГЭ">
@@ -65,9 +63,7 @@
             </div>
         </section>
         <section class="directions">
-            <div class="title">
-                <h2>Готовьтесь к экзаменам легко и PRO100</h2>
-            </div>
+            <h2 class="title">Готовьтесь к экзаменам легко и PRO100</h2>
             <div class="directions__inner">
                 <article class="directions__inner-text">
                     <span>Олимпиады</span>
@@ -82,40 +78,36 @@
             </div>
         </section>
         <section class="reviews">
-            <div class="title">
-                <h2>Отзывы</h2>
-            </div>
+            <h2 class="title">Отзывы</h2>
             <div class="reviews__inner">
-				<article class="reviews__inner-items">
+                <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Jack</span>
+                    <span>Отзыв 1</span>
                 </article>
                 <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Nick</span>
+                    <span>Отзыв 2</span>
                 </article>
                 <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Michel</span>
+                    <span>Отзыв 3</span>
                 </article>
                 <article class="reviews__inner-items">
                     <div>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius error est eveniet ipsam itaque officiis quasi quos vitae voluptates?
                     </div>
-                    <span>Jasy</span>
+                    <span>Отзыв 4</span>
                 </article>
             </div>
         </section>
         <section class="teachers">
-            <div class="title">
-                <h2>Наши специалисты</h2>
-            </div>
+            <h2 class="title">Наши специалисты</h2>
             <div class="teachers__inner">
                 <article class="teachers__inner-item">
                     <img src="images/teacher_one.webp" alt="Учитель">
@@ -136,36 +128,35 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section class="footer">
-            <div class="logo">Logo</div>
-            <nav class="bottom-nav">
-                <ul>
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="/">ЕГЭ/ОГЭ</a></li>
-                    <li><a href="/">Другие направления</a></li>
-                    <li><a href="/">О нас</a></li>
-                    <li><a href="/">Отзывы</a></li>
-                    <li><a href="/">Контакты</a></li>
-                </ul>
-            </nav>
-			<div class="contacts">
-				<span>+7 927 000 00 00</span>
-				<span>admin@site.com</span>
-			</div>
-            <div class="copyright">
-                By Ахматханова Р. В. & Иванова Д. В.
-            </div>
-        </section>
+    <footer class="footer">
+        <div class="logo">Logo</div>
+        <nav class="bottom-nav">
+            <ul class="bottom-nav__inner">
+                <li class="bottom-nav-item"><a href="/">Главная</a></li>
+                <li class="bottom-nav-item"><a href="/">ЕГЭ/ОГЭ</a></li>
+                <li class="bottom-nav-item"><a href="/">Другие направления</a></li>
+                <li class="bottom-nav-item"><a href="/">О нас</a></li>
+                <li class="bottom-nav-item"><a href="/">Отзывы</a></li>
+                <li class="bottom-nav-item"><a href="/">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <span>+7 927 000 00 00</span>
+            <span>admin@site.com</span>
+        </div>
+        <div class="copyright">
+            By Ахматханова Р. В. & Иванова Д. В.
+        </div>
     </footer>
 </div>
-<form class="login visually-hidden" action="login.php" method="post">
-    <span class="login-form__close"></span>
-    <label for="name">Логин:</label>
-    <input type="text" id="name" name="login" required>
+<div class="overlay visually-hidden"></div>
+<form class="login-form visually-hidden" action="" method="post">
+    <span class="login__close"></span>
+    <label class="label" for="name">Логин:</label>
+    <input class="input" type="text" id="name" name="login" required>
 
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required>
+    <label class="label" for="password">Пароль:</label>
+    <input class="input" type="password" id="password" name="password" required>
 
     <button class="btn" type="submit">Отправить</button>
 </form>
