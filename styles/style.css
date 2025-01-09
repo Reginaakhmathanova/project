@@ -212,7 +212,7 @@ nav ul {
     width: 100%;
     transform: translate(0, 0) scale(1);
 }
-.login-form__close{
+.login__close{
     position: absolute;
     right: 5px;
     top: 18px;
@@ -222,7 +222,7 @@ nav ul {
     transform: rotate(45deg);
     cursor: pointer;
 }
-.login-form__close::before{
+.login__close::before{
     content: '';
     display: block;
     width: 25px;
