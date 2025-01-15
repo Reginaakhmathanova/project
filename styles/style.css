@@ -71,7 +71,7 @@ nav ul {
     text-shadow: 0 0 15px rgb(0 0 0 / 50%), 0 0 10px rgb(0 0 0 / 50%);
 }
 .info-double img, .teachers__inner-item img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 .info-big__title{
