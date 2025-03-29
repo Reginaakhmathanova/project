@@ -1,77 +1,77 @@
 @font-face {
-    font-family: 'robotoblack';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-black-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-black-webfont.woff') format('woff');
-    font-weight: normal;
+         url('../fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotoblack_italic';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('../fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
 }
 @font-face {
-    font-family: 'robotobold';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotobold_italic';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('../fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
 }
 @font-face {
-    font-family: 'robotoitalic';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-italic-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('../fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
 }
 @font-face {
-    font-family: 'robotolight';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-light-webfont.woff') format('woff');
-    font-weight: normal;
+         url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotolight_italic';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('../fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
 }
 @font-face {
-    font-family: 'robotomedium';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-medium-webfont.woff') format('woff');
-    font-weight: normal;
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotoregular';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotothin';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-thin-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-thin-webfont.woff') format('woff');
-    font-weight: normal;
+         url('../fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
 }
 @font-face {
-    font-family: 'robotothin_italic';
+    font-family: 'Roboto';
     src: url('../fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
-    url('../fonts/roboto-thinitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('../fonts/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
 }
