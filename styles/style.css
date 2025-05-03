@@ -334,7 +334,7 @@ nav ul {
     flex-direction: column;
     gap: 20px;
 }
-.page_preloade {
+.page_preload {
     position: fixed;
     top: 0;
     left: 0;
