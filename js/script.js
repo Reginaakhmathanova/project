@@ -72,46 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = (currentIndex + 1) % backgroundImages.length;
     });
 
-    /*
-    :
-
-
-
-        /*
-        Алгоритм вывода  ссылок:
-        1. Заводим массив объектов с текстом и href.
-        2. Получаем элемент <ul>.
-        3. Для каждого элемента массива создаём <li> с <a>.
-        4. Добавляем в <ul>.
-        5. Проверяем в консоли.
-        */
-
-        const menuItems = [
-        {text: 'Главная', href: '/'},
-        {text: 'ЕГЭ/ОГЭ', href: '#'},
-        {text: 'Другие направления', href: '#'},
-        {text: 'О нас', href: '#'},
-        {text: 'Отзывы', href: '#'},
-        {text: 'Контакты', href: '#'}
-        ];
-
-        const menuList = document.querySelector('.header__nav-inner');
-
-        menuItems.forEach(item => {
-            const li = document.createElement('li');
-            li.classList.add('header__nav-item');
-
-            const a = document.createElement('a');
-            a.href = item.href;
-            a.textContent = item.text;
-
-            li.appendChild(a);
-            menuList.appendChild(li);
-        });
-
-        console.log('Меню сформировано из массива:', menuItems);
-
-    const preloader = document.querySelector('.page_preloade');
+    const preloader = document.querySelector('.page_preload');
     const content = document.querySelector('.content');
 
     setTimeout(() => {
@@ -120,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         fetchMenu(); 
     }, 1500);
-});
+
 
 function fetchMenu() {
     fetch('data.json')
@@ -146,7 +107,6 @@ function fetchMenu() {
         .catch(error => {
             console.error('Ошибка загрузки меню:', error);
         });
+}
 
 });
-
-
