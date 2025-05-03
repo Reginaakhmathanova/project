@@ -3,6 +3,31 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log('Скрипт отработал корректно')
 
+    const swiper = new Swiper('.reviews__swiper', {
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
+
+
     const showFormBtns = document.querySelectorAll('.show-form-btn');
     const form = document.querySelector('.login-form');
     const overlay = document.querySelector('.overlay');
@@ -108,5 +133,18 @@ function fetchMenu() {
             console.error('Ошибка загрузки меню:', error);
         });
 }
+    const loginForm = document.querySelector('.login-form');
+    const nameInput = document.querySelector('#name');
+
+    if (localStorage.getItem('username')) {
+        nameInput.value = localStorage.getItem('username');
+    }
+
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        localStorage.setItem('username', nameInput.value);
+        alert('Форма отправлена! Данные сохранены в localStorage.');
+    });
+
 
 });
