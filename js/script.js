@@ -1,3 +1,9 @@
+'use strict'
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log('Скрипт отработал корректно')
+});
+
 const showFormBtns = document.querySelectorAll('.show-form-btn');
 const form = document.querySelector('.login-form');
 const overlay = document.querySelector('.overlay');
