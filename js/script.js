@@ -73,22 +73,44 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     /*
-    Алгоритм для сборки ссылок:
-    1. Получить все элементы <a> внутри .header__nav-inner.
-    2. Пройтись по каждому элементу и взять его текст (innerText).
-    3. Сформировать массив из этих текстов.
-    4. Вывести полученный массив в консоль или на страницу.
-    */
+    :
 
-    const menuLinks = document.querySelectorAll('.header__nav-inner a');
 
-    const linkTexts = Array.from(menuLinks).map(link => link.innerText);
 
-    console.log('Массив названий меню:', linkTexts);
+        /*
+        Алгоритм вывода  ссылок:
+        1. Заводим массив объектов с текстом и href.
+        2. Получаем элемент <ul>.
+        3. Для каждого элемента массива создаём <li> с <a>.
+        4. Добавляем в <ul>.
+        5. Проверяем в консоли.
+        */
 
-    const output = document.createElement('div');
-    output.innerText = 'Пункты меню: ' + linkTexts.join(', ');
-    document.body.appendChild(output);
+        const menuItems = [
+        {text: 'Главная', href: '/'},
+        {text: 'ЕГЭ/ОГЭ', href: '#'},
+        {text: 'Другие направления', href: '#'},
+        {text: 'О нас', href: '#'},
+        {text: 'Отзывы', href: '#'},
+        {text: 'Контакты', href: '#'}
+        ];
+
+        const menuList = document.querySelector('.header__nav-inner');
+
+        menuItems.forEach(item => {
+            const li = document.createElement('li');
+            li.classList.add('header__nav-item');
+
+            const a = document.createElement('a');
+            a.href = item.href;
+            a.textContent = item.text;
+
+            li.appendChild(a);
+            menuList.appendChild(li);
+        });
+
+        console.log('Меню сформировано из массива:', menuItems);
+
 });
 
 
