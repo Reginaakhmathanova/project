@@ -360,3 +360,18 @@ nav ul {
     100% { transform: rotate(360deg); }
 }
 
+.reviews__inner-items {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.reviews__swiper {
+    padding: 40px 0;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+}
