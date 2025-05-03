@@ -321,3 +321,16 @@ nav ul {
         background: #fff;
     }
 }
+.change__bg{
+    padding: 15px 20px;
+    background-color: #0b7077;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.info-big article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
