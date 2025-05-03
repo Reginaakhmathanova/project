@@ -111,6 +111,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
         console.log('Меню сформировано из массива:', menuItems);
 
+    const preloader = document.querySelector('.page_preloade');
+    const content = document.querySelector('.content');
+
+    setTimeout(() => {
+        preloader.classList.add('visually-hidden');
+        content.classList.remove('visually-hidden');
+
+        fetchMenu(); 
+    }, 1500);
+});
+
+function fetchMenu() {
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Ошибка загрузки JSON');
+            return response.json();
+        })
+        .then(data => {
+            const menuList = document.querySelector('.header__nav-inner');
+
+            data.forEach(item => {
+                const li = document.createElement('li');
+                li.classList.add('header__nav-item');
+
+                const a = document.createElement('a');
+                a.href = item.href;
+                a.textContent = item.text;
+
+                li.appendChild(a);
+                menuList.appendChild(li);
+            });
+        })
+        .catch(error => {
+            console.error('Ошибка загрузки меню:', error);
+        });
+
 });
 
 
