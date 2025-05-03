@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Учиться PRO100</title>
 </head>
 <body>
@@ -90,30 +91,32 @@
         <section class="reviews">
             <h2 class="title">Отзывы</h2>
             <div class="reviews__inner">
-                <article class="reviews__inner-items">
-                    <div>
-                        Мой сын всегда испытывал трудности с математикой, но после занятий здесь я просто не узнаю его! Он стал увереннее решать задачи, а в школе даже получил похвалу от учителя. Огромное спасибо за индивидуальный подход и поддержку!                    
+                <div class="swiper reviews__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews__inner-items">
+                            <div>Мой сын всегда испытывал трудности с математикой... </div>
+                            <span>Мария Иванова, мама девятиклассника</span>
+                        </div>
+                        <div class="swiper-slide reviews__inner-items">
+                            <div>Готовился к ЕГЭ по физике и был в панике... </div>
+                            <span>Александр Петров, ученик 11 класса</span>
+                        </div>
+                        <div class="swiper-slide reviews__inner-items">
+                            <div>Дочка всегда любила английский, но не хватало практики... </div>
+                            <span>Ольга Смирнова, мама пятиклассницы</span>
+                        </div>
+                        <div class="swiper-slide reviews__inner-items">
+                            <div>Я обожаю биологию, но подготовка к олимпиаде... </div>
+                            <span>Дмитрий Кузнецов, ученик 8 класса</span>
+                        </div>
                     </div>
-                    <span>Мария Иванова, мама девятиклассника</span>
-                </article>
-                <article class="reviews__inner-items">
-                    <div>
-                        Готовился к ЕГЭ по физике и был в панике из-за сложных тем. Благодаря занятиям я не только разобрался во всём, но и научился применять знания на практике. Теперь чувствую себя готовым к экзаменам! Рекомендую всем!                    
-                    </div>
-                    <span>Александр Петров, ученик 11 класса</span>
-                </article>
-                <article class="reviews__inner-items">
-                    <div>
-                        Дочка всегда любила английский, но не хватало практики. После занятий здесь её уровень заметно вырос, она начала читать книги в оригинале и смотреть мультфильмы без перевода. Педагоги настоящие профессионалы!                  
-                    </div>
-                    <span>Ольга Смирнова, мама пятиклассницы</span>
-                </article>
-                <article class="reviews__inner-items">
-                    <div>
-                        Я обожаю биологию, но подготовка к олимпиаде требовала более глубоких знаний. На занятиях мне объяснили всё просто и понятно, разобрали сложные темы. В итоге я занял призовое место на районной олимпиаде. Спасибо!                   
-                    </div>
-                    <span>Дмитрий Кузнецов, ученик 8 класса</span>
-                </article>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
             </div>
         </section>
         <section class="teachers">
@@ -169,5 +172,7 @@
     <button class="btn login__submit" type="submit">Отправить</button>
 </form>
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
