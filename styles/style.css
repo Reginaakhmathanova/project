@@ -184,7 +184,7 @@ nav ul {
     z-index: 10;
 }
 
-.login-form {
+.login {
     display: grid;
     position: fixed;
     top: 50%;
@@ -199,12 +199,12 @@ nav ul {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.login-form.visible,
+.login.visible,
 .overlay.visible {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
-.login-form.visible{
+.login.visible{
     display: grid;
     gap: 20px;
     min-width: 350px;
