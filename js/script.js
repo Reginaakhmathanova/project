@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const showFormBtns = document.querySelectorAll('.show-form-btn');
-const form = document.querySelector('.login-form');
+const form = document.querySelector('.login');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.login__close');
 const mobileMenu = document.querySelector('.header__nav');
